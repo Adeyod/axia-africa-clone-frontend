@@ -10,6 +10,12 @@ export default {
       screens: {
         xs: '480px',
       },
+      animation: {
+        'bounce-slow': 'bounce 15s infinite',
+      },
+      fontFamily: {
+        sans: ['sans-serif'],
+      },
     },
   },
   plugins: [],

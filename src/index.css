@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  width: 410px !important;
+}
+.slick-slider {
+  padding-left: 5px;
+  padding-right: 5px;
+}
