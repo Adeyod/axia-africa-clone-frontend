@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { schools } from '../../constants/courses-data';
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const DiscoverSection = () => {
   return (
     <div className="mx-auto container w-full mt-24 mb-40 lg:px-[150px] px-5 relative">
       <div className="">
-        <h1 className="headline text-[28px] font-medium text-darkish md:text-4xl">
+        <h1 className="font-bold text-[28px] text-darkish md:text-4xl">
           {' '}
           Discover the right school for your journey{' '}
         </h1>
@@ -15,20 +16,38 @@ const DiscoverSection = () => {
         </p>
       </div>
       <img
-        className="mt-0 sm:mt-12 absolute right-10 w-[220px] sm:w-[350px] -top-24 bouncy-up"
+        className="mt-0 sm:mt-12 absolute right-10 w-[220px] sm:w-[350px] -top-24 animate-bounce-medium"
         src="https://axia.africa/_nuxt/doddle2.c269fd0b.svg"
         alt="discovery-image"
       />
       <div className="flex flex-wrap md:mt-28 mt-20 gap-x-20 md:gap-y-32 gap-y-20 w-full justify-center">
         {schools.map((school, index) => (
-          <div key={index} className="card md:w-[40%] md:px-5 px-3">
-            <h3 className="md:text-2xl text-lg text-darkish font-semibold">
+          <div
+            key={index}
+            className="relative bg-gray-100 h-[45vh] flex flex-col gap-5 md:w-[44%] md:px-5 px-3"
+          >
+            <div className="absolute inset-0">
+              {/* Left Line */}
+              <div className="absolute top-[12%] left-[-20px] w-[3px] h-[93%] bg-black"></div>
+
+              {/* Bottom Line */}
+              <div className="absolute bottom-[-20px] left-[-20px] w-[97%] h-[3px] bg-black"></div>
+            </div>
+            <h3 className="md:text-2xl mt-5 text-lg text-darkish font-semibold">
               {school.title}
             </h3>
-            <p className="text-sm md:text-base font-medium mt-6 text-darkgrey">
+            <p className="text-sm md:text-base mb-10 font-medium mt-6 text-darkgrey">
               {school.description}
             </p>
-            <Link to="#">View Courses</Link>
+            <div className="flex gap-3 items-center">
+              <Link
+                to="#"
+                className="text-primary flex items-end underline font-bold"
+              >
+                View Courses
+              </Link>
+              <FaArrowRightLong className="text-primary w-[16px]" />
+            </div>
           </div>
         ))}
       </div>

@@ -9,9 +9,11 @@ export default {
       },
       screens: {
         xs: '480px',
+        ms: '220px',
       },
       animation: {
         'bounce-slow': 'bounce 15s infinite',
+        'bounce-medium': 'bounce 5s infinite',
       },
       fontFamily: {
         sans: ['sans-serif'],
