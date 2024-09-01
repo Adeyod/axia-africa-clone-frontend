@@ -7,9 +7,9 @@ import Button from '../Button';
 const SpeakToAdvisorSection = () => {
   return (
     <div className="w-full md:py-36 py-20 bg-primary">
-      <div className="container w-full mx-auto flex flex-col lg:flex-row lg:items-center gap-10 justify-between px-5 lg:px-[150px]">
+      <div className="ml-[25px] container w-full mx-auto flex flex-col lg:flex-row lg:items-center gap-10 justify-between px-5 lg:px-[150px]">
         <div className="max-w-[440px] mb-16">
-          <h1 className="text-[28px] md:text-[36px] text-white font-medium">
+          <h1 className="font-bold text-[28px] md:text-[36px] text-white">
             Confused about what to learn?
           </h1>
           <p className="mt-5 md:text-lg text-gray-300 font-medium">
@@ -24,7 +24,7 @@ const SpeakToAdvisorSection = () => {
           />
         </div>
         <img
-          className="w-full sm:w-[50%]"
+          className="w-full sm:w-[55%]"
           src="https://axia.africa/_nuxt/advisor.ab0317b2.svg"
           alt="advisor-image"
         />

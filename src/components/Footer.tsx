@@ -1,7 +1,17 @@
-import { Link } from 'react-router-dom';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { FaInstagram } from 'react-icons/fa6';
 import { IoLogoTwitter } from 'react-icons/io5';
+import Contact from './Contact';
+import {
+  companyLargeScreenStyle,
+  companyMobileScreenStyle,
+  contactSmallStyles,
+  contactStyles,
+  schoolLargeScreenStyle,
+  schoolMobileStyle,
+} from '../constants/styles';
+import Schools from './Schools';
+import Company from './Company';
 
 const Footer = () => {
   return (
@@ -58,68 +68,13 @@ const Footer = () => {
           */}
           <div className="grid grid-cols-2 mt-[45px] !gap-8 !gap-y-20 md:hidden w-full">
             {/* SCHOOLS */}
-            <div className="flex flex-col gap-[30px]">
-              <h1 className="font-bold">SCHOOLS</h1>
-              <Link to="#" className="font-medium text-gray-100 text-sm">
-                {' '}
-                School of Product{' '}
-              </Link>
-              <Link to="#" className="font-medium text-gray-100 text-sm">
-                {' '}
-                School of Data{' '}
-              </Link>
-              <Link to="#" className="font-medium text-gray-100 text-sm">
-                {' '}
-                School of Engineering{' '}
-              </Link>
-            </div>
+            <Schools schoolsContainerStyle={schoolMobileStyle} />
 
             {/* COMPANY */}
-            <div className="flex flex-col gap-[30px]">
-              <h1 className="font-bold">COMPANY</h1>
-              <Link
-                className="router-link-active router-link-exact-active font-medium text-lighestgrey text-sm"
-                to="#"
-              >
-                About
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                FAQs
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                Join Our Community{' '}
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                Partnership{' '}
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                Privacy Policy{' '}
-              </Link>
-            </div>
+            <Company companyContainerStyle={companyMobileScreenStyle} />
 
             {/* CONTACT */}
-            <div className="flex flex-col gap-[30px]">
-              <h1 className="font-bold">CONTACT</h1>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                info@axia.africa{' '}
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                +234 707 109 7262{' '}
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                +234 707 072 4286{' '}
-              </Link>
-              <Link to="#" className="font-medium text-lighestgrey text-sm">
-                {' '}
-                +234 707 088 2627{' '}
-              </Link>
-            </div>
+            <Contact contactContainerStyle={contactSmallStyles} />
 
             {/* SOCIALS */}
             <div className="flex gap-5">
@@ -153,63 +108,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex flex-col gap-[30px] w-[15%] mt-6 md:mt-0 pc">
-          <h1 className="font-bold text-lg mb-2.5">COMPANY</h1>
-          <Link className="router-link-active router-link-exact-active" to="#">
-            About
-          </Link>
-          <Link to="#" className="">
-            FAQs
-          </Link>
-          <Link to="#" className="router-link-active router-link-exact-active">
-            {' '}
-            Join Our Community{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            Partnership{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            Privacy Policy{' '}
-          </Link>
-        </div>
+        <Company companyContainerStyle={companyLargeScreenStyle} />
 
-        <div className="hidden md:flex flex-col gap-[30px] w-[20%] pc">
-          <h1 className="font-bold text-lg mb-2.5">SCHOOLS</h1>
-          <Link to="#" className="font-light">
-            {' '}
-            School of Product{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            School of Data{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            School of Engineering{' '}
-          </Link>
-        </div>
+        <Schools schoolsContainerStyle={schoolLargeScreenStyle} />
 
-        <div className="hidden md:flex flex-col gap-[30px] lg:w-[15%] mt-6 md:mt-0 pc">
-          <h1 className="">CONTACT</h1>
-          <Link to="#" className="">
-            {' '}
-            info@axia.africa{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            +234 707 109 7262{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            +234 707 072 4286{' '}
-          </Link>
-          <Link to="#" className="">
-            {' '}
-            +234 707 088 2627{' '}
-          </Link>
-        </div>
+        <Contact contactContainerStyle={contactStyles} />
       </div>
 
       <p className="center text-center w-full md:w-auto pc mt-32">

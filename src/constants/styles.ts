@@ -15,7 +15,24 @@ const advisorSectionStyle =
   "text-white text-center hover:text-black mt-8 items-center justify-center border-[3px] content-center w-[214px] h-[54px] gap-3 bg-primary font-semibold shadow-[8px_8px_0px_0px_white] hover:bg-white hover:shadow-[8px_8px_0px_0px_theme('colors.secondary')] transition-all duration-300";
 const advisorTextSectionStyle = 'text-inherit';
 
+const contactStyles =
+  'hidden md:flex flex-col gap-[30px] lg:w-[15%] mt-6 md:mt-0 pc';
+
+const contactSmallStyles = 'flex flex-col gap-[30px]';
+
+const schoolMobileStyle = 'flex flex-col gap-[30px]';
+const schoolLargeScreenStyle = 'hidden md:flex flex-col gap-[30px] w-[20%] pc';
+const companyLargeScreenStyle =
+  'hidden md:flex flex-col gap-[30px] w-[15%] mt-6 md:mt-0 pc';
+const companyMobileScreenStyle = 'flex flex-col gap-[30px]';
+
 export {
+  schoolMobileStyle,
+  schoolLargeScreenStyle,
+  companyLargeScreenStyle,
+  companyMobileScreenStyle,
+  contactSmallStyles,
+  contactStyles,
   knowledgeContainerStyle,
   knowledgeLinkStyle,
   learnContainerStyle,

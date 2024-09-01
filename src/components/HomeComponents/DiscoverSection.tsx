@@ -39,14 +39,11 @@ const DiscoverSection = () => {
             <p className="text-sm md:text-base mb-10 font-medium mt-6 text-darkgrey">
               {school.description}
             </p>
-            <div className="flex gap-3 items-center">
-              <Link
-                to="#"
-                className="text-primary flex items-end underline font-bold"
-              >
+            <div className="flex gap-3 hover:gap-5 items-center">
+              <Link to="#" className="text-primary underline font-bold">
                 View Courses
               </Link>
-              <FaArrowRightLong className="text-primary w-[16px]" />
+              <FaArrowRightLong className="text-primary text-2xl" />
             </div>
           </div>
         ))}

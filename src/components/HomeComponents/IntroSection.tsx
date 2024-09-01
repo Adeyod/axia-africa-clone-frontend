@@ -19,21 +19,21 @@ const IntroSection = () => {
           Begin your tech journey and expand your career opportunities in the
           tech space by learning tech skills in demand.
         </p>
-        <div className="z-20 flex flex-col justify-center md:justify-start md:flex-row gap-6 items-center mt-12">
+        <div className="z-10 flex flex-col justify-center md:justify-start md:flex-row gap-6 items-center mt-12">
           <Button
             title={'Apply Now'}
             containerStyle={containerStyle}
             linkStyle={linkStyle}
             route={'/apply'}
           />
-          <div className="flex items-center gap-2 py-[12px] px-[24px] w-[240px] h-[48px]">
+          <div className="flex items-center gap-3 hover:gap-5 py-[12px] px-[24px] h-[48px]">
             <Button
               title={'Speak with an Advisor'}
               containerStyle={advisorContainerStyle}
               linkStyle={advisorTextStyle}
               route={'/apply'}
             />
-            <FaArrowRightLong className="w-[16px]" />
+            <FaArrowRightLong className="text-2xl text-gray-800" />
           </div>
         </div>
         <img
