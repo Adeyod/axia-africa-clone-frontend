@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ContactType } from '../constants/types';
 
-const Contact: React.FC<ContactType> = ({ contactContainerStyle }) => {
+const Contact: React.FC<ContactType> = ({ contactContainerStyle, title }) => {
   return (
     <div className={contactContainerStyle}>
-      <h1 className="">CONTACT</h1>
+      <p className="font-bold">{title}</p>
       <Link to="#" className="">
         {' '}
         info@axia.africa{' '}

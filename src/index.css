@@ -11,3 +11,10 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+
+.gradient-text {
+  background: linear-gradient(to left, #f0b73f, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -4,12 +4,12 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 const DiscoverSection = () => {
   return (
-    <div className="mx-auto container w-full mt-24 mb-40 lg:px-[150px] px-5 relative">
+    <div className=" mx-auto w-full mt-24 mb-40 lg:px-[150px] px-10 relative">
       <div className="">
-        <h1 className="font-bold text-[28px] text-darkish md:text-4xl">
+        <p className="font-bold text-[28px] text-darkish md:text-4xl">
           {' '}
           Discover the right school for your journey{' '}
-        </h1>
+        </p>
         <p className="md:text-lg max-w-[708px] text-darkgrey mt-5 font-medium">
           Axia Africa offers you the chance to explore schools which has variety
           of courses to learn from, like product design, Front end,
@@ -33,10 +33,10 @@ const DiscoverSection = () => {
               {/* Bottom Line */}
               <div className="absolute bottom-[-20px] left-[-20px] w-[97%] h-[3px] bg-black"></div>
             </div>
-            <h3 className="md:text-2xl mt-5 text-lg text-darkish font-semibold">
+            <p className="md:text-2xl mt-5 text-lg font-semibold">
               {school.title}
-            </h3>
-            <p className="text-sm md:text-base mb-10 font-medium mt-6 text-darkgrey">
+            </p>
+            <p className="text-sm md:text-base mb-10 font-medium mt-6 text-gray-800">
               {school.description}
             </p>
             <div className="flex gap-3 hover:gap-5 items-center">

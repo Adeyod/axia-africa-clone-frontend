@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import Schools from './Schools';
+import Company from './Company';
+import Contact from './Contact';
+import {
+  companyStyles,
+  containerNavbarStyle,
+  linkContainerStyle,
+  NavbarContactStyles,
+  schoolLinkStyles,
+  schoolStyles,
+} from '../constants/styles';
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
-  const containerStyle =
-    "hidden md:flex text-primary text-center hover:text-white  items-center justify-center border-[3.5px] w-[134.63px] h-[53px] border-black gap-3 bg-white font-semibold shadow-[8px_8px_0px_0px_#202054] hover:bg-primary hover:shadow-[8px_8px_0px_0px_theme('colors.secondary')] transition-all duration-300";
-  const linkStyle = 'text-inherit';
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -27,7 +35,7 @@ const NavBar = () => {
             </Link>
 
             <div className="hidden gap-7 lg:flex items-center">
-              <Link to="/about">About</Link>
+              <Link to="#">About</Link>
 
               <div className="relative group flex items-center gap-2 cursor-pointer">
                 <p className="flex gap-1">
@@ -101,10 +109,10 @@ const NavBar = () => {
             </div>
 
             <Button
-              containerStyle={containerStyle}
-              linkStyle={linkStyle}
+              containerStyle={containerNavbarStyle}
+              linkStyle={linkContainerStyle}
               title="Apply now"
-              route={'/apply'}
+              route={'#'}
             />
 
             <button className="md:hidden" onClick={handleToggle}>
@@ -114,6 +122,25 @@ const NavBar = () => {
                 <IoMdMenu className="text-2xl" />
               )}
             </button>
+          </div>
+        </div>
+
+        <div
+          className={[
+            toggle ? '' : 'top-[-1000px]',
+            'fixed inset-1 bg-blue bg md:hidden h-screen mt-[70px] pt-20 px-5 bg-white',
+          ].join(' ')}
+        >
+          <div className="grid grid-cols-2 mt-[45px] gap-4 gap-y-12">
+            <Schools
+              linkStyles={schoolLinkStyles}
+              schoolsContainerStyle={schoolStyles}
+            />
+            <Company companyContainerStyle={companyStyles} />
+            <Contact
+              title={'HELP'}
+              contactContainerStyle={NavbarContactStyles}
+            />
           </div>
         </div>
       </nav>

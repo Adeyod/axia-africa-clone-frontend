@@ -4,11 +4,16 @@ import { GoDash } from 'react-icons/go';
 const OnboardSection = () => {
   return (
     <div className="w-full md:py-28 py-12 bg-[#111111]">
-      <div className="container ml-[50px] lg:px-[150px] mx-auto">
-        <p className="container w-full headline font-semibold text-[28px] md:text-[36px] lg:pl-12 text-white">
+      <div className="container lg:px-[150px] mx-auto">
+        <p className="container w-full font-semibold text-[28px] md:text-[36px] lg:pl-12 text-white">
           Get onboard with us
         </p>
         <div className="container w-full mx-auto gap-10 md:gap-20 flex flex-col-reverse lg:flex-row items-start justify-between md:mt-20 mt-12">
+          <img
+            className="object-cover w-full md:w-[55%]"
+            src="https://axia.africa/_nuxt/onboard.bc92bcb0.svg"
+            alt="onboard-image"
+          />
           <div className="w-full md:w-[45%] text-gray-300">
             <div className="md:w-14 w-10 text-white">
               <FaQuoteLeft className="text-6xl" />
@@ -29,9 +34,9 @@ const OnboardSection = () => {
           <div className="flex items-center">
             <GoDash className="text-5xl mr-[-25px]" />
             <GoDash className="text-5xl mr-[-80px]" />
-            <h2 className="font-bold text-[28px] md:text-3xl text-white relative ml-24 before:border-black">
+            <p className="font-bold text-[28px] md:text-3xl text-white relative ml-24 before:border-black">
               Why choose us
-            </h2>
+            </p>
           </div>
           <p className="mt-6 md:text-base text-gray-300">
             We at Axia Africa are intentional about our students and focused

@@ -24,7 +24,7 @@ const TechKnowledgeSection = () => {
             containerStyle={knowledgeContainerStyle}
             linkStyle={linkStyle}
             title="Apply Now"
-            route={'/apply'}
+            route={'#'}
           />
         </div>
       </div>

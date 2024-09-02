@@ -2,19 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SchoolsType } from '../constants/types';
 
-const Schools: React.FC<SchoolsType> = ({ schoolsContainerStyle }) => {
+const Schools: React.FC<SchoolsType> = ({
+  linkStyles,
+  schoolsContainerStyle,
+}) => {
   return (
     <div className={schoolsContainerStyle}>
-      <h1 className="font-bold">SCHOOLS</h1>
-      <Link to="#" className="font-medium text-gray-100 text-sm">
+      <p className="font-bold">SCHOOLS</p>
+      <Link to="#" className={linkStyles}>
         {' '}
         School of Product{' '}
       </Link>
-      <Link to="#" className="font-medium text-gray-100 text-sm">
+      <Link to="#" className={linkStyles}>
         {' '}
         School of Data{' '}
       </Link>
-      <Link to="#" className="font-medium text-gray-100 text-sm">
+      <Link to="#" className={linkStyles}>
         {' '}
         School of Engineering{' '}
       </Link>

@@ -5,14 +5,14 @@ import { CompanyType } from '../constants/types';
 const Company: React.FC<CompanyType> = ({ companyContainerStyle }) => {
   return (
     <div className={companyContainerStyle}>
-      <h1 className="font-bold text-lg mb-2.5">COMPANY</h1>
-      <Link className="router-link-active router-link-exact-active" to="#">
+      <p className="font-bold text-lg mb-2.5">COMPANY</p>
+      <Link className="" to="#">
         About
       </Link>
       <Link to="#" className="">
         FAQs
       </Link>
-      <Link to="#" className="router-link-active router-link-exact-active">
+      <Link to="#" className="">
         {' '}
         Join Our Community{' '}
       </Link>
