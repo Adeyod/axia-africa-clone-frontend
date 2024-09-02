@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .slider-container {
+  width: 100%; 
+  overflow: hidden; 
+}
+
 .slick-slide {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   margin-left: 20px !important;
   margin-right: 20px !important;
   width: 410px !important;
@@ -10,6 +19,31 @@
 .slick-slider {
   padding-left: 5px;
   padding-right: 5px;
+}
+.slick-list {
+  overflow: hidden;
+} */
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto; /* This prevents wrapping */
+  margin: 0 10px; /* Adjust margins to avoid overflow */
+}
+
+.slick-slider {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.slick-list {
+  overflow: hidden;
 }
 
 .gradient-text {

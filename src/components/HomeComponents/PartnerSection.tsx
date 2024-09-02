@@ -3,7 +3,7 @@ import { learnContainerStyle, linkStyle } from '../../constants/styles';
 
 const PartnerSection = () => {
   return (
-    <div className="container mx-auto w-full mt-40 mb-60 text-center relative md:px-0 px-5">
+    <div className="container mx-auto w-full mt-[-270px] mb-60 text-center relative md:px-0 px-5">
       <p className="font-semibold text-[28px] md:text-4xl"> Partner With Us </p>
       <p className="md:text-base mb-[-50px] mt-6 pb-28 font-medium text-gray-900 text-center max-w-[800px] mx-auto">
         Do you have a passion for making impact and inspiring to the tech space?
